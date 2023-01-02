@@ -1,0 +1,127 @@
+.container {
+    margin: 100px auto;
+    width: 40%;
+    padding: 20px;
+}
+
+.container h1 {
+    text-align: center;
+    padding-bottom: 50px;
+    font-size: 40px
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.project input, textarea {
+    resize: none;
+    border: 2px solid #afaeff;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.date {
+    flex-direction: row;
+
+}
+
+.date div {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.date .left {
+    flex: 50%;
+    margin-right: 3%;
+}
+
+.date .right {
+    flex: 50%;
+    margin-left: 3%;
+}
+
+form label.title {
+    font-weight: 600;
+}
+
+form .box {
+    display: flex;
+    width: 100%;
+}
+
+form .box div {
+    margin-bottom: 10px;
+}
+
+.box input {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    margin-right: 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    border: 2px solid #afaeff;
+}
+
+.box input:after {
+    content: "\2714";
+    display: none;
+    text-align: center;
+    font-size: 15px;
+}
+
+.box input:hover {
+    background-color: #f4f3f3;
+}
+
+.box input:checked::after {
+    display: block;
+}
+
+.box .satu {
+    width: 50%;
+}
+
+.box .dua {
+    width: 50%;
+}
+
+.upload {
+   background-color: white;
+   padding: 10px;
+   border-radius: 5px;
+   margin-bottom: 20px;
+}
+
+.button button {
+    background-color: black;
+    color: white;
+    padding: 5px 25px;
+    border: none;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+form .button {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.button button:active {
+    background-color: rgb(0, 0, 0);
+    color: black;
+    padding: 5px 25px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.upload {
+    display: flex;
+    justify-content: space-between;
+}

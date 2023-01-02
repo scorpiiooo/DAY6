@@ -1,0 +1,106 @@
+<html>
+    <head>
+        <title>UPDATE PROJECT</title>
+        <link rel="stylesheet" href="./assets/css/add-project.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    </head>
+
+    <body style="background-color: rgb(71, 71, 71)">
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+            <div class="container-lg">
+                <a class="navbar-brand me-5" href="./index.html">
+                    <img src="./assets/img/dumbways.png" alt="logo" style="height: 30px;"/>
+                </a>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./index.html" style="color: antiquewhite;">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./add-project.html" class="nav-link list-active" style="color: antiquewhite; font-weight: bold;">ADD PROJECT</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="d-flex contact-me">
+                    <a href="./contact.html" style="text-decoration: none; background-color: rgb(71, 71, 71); font-weight: bold; color: white; border-radius: 15px; border: none; padding: 10px 15px; font-size: 13px;"> CONTACT ME </a>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container">
+            <form onsubmit="getData(event)" style="margin-left: 300px; margin-right: 300px;">
+                <h1 style="margin-top: -115px; color: antiquewhite;">UPDATE PROJECT</h1>
+                <div class="project">
+                    <label class="title" for="project-name" style="color: antiquewhite;">Project Name</label>
+                    <input  type="text" id="project-name">
+                </div>
+                <div class="project date">
+                    <div class="left">
+                        <label class="title" for="start-date" style="color: antiquewhite;">Start Date</label>
+                        <input type="date" id="start-date">
+                    </div>
+                    <div class="right">
+                        <label class="title" for="end-date" style="color: antiquewhite;">End Date</label>
+                        <input type="date" id="end-date">
+                    </div>
+                </div>
+                <div class="project">
+                    <label class="title" for="description" style="color: antiquewhite;">Description</label>
+                    <textarea name="" id="description" rows="5"></textarea>
+                </div>
+
+                <div>
+                    <label class="title" style="color: antiquewhite;">Technologies</label>
+                </div>
+
+                <div class="box">
+                    <div class="satu">
+                        <div>
+                            <input type="checkbox" id="node-js" name="technologies" value="Node Js">
+                            <label for="node-js" style="color: antiquewhite;">Node Js</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="react-js" name="technologies" value="React Js">
+                            <label for="react-js" style="color: antiquewhite;">React Js</label>
+                        </div>
+                    </div>
+                    <div class="dua">
+                        <div>
+                            <input type="checkbox" id="next-js" name="technologies" value="Next Js">
+                            <label for="next-js" style="color: antiquewhite;">Next Js</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="type-script" name="technologies" value="TypeScript">
+                            <label for="type-script" style="color: antiquewhite;">TypeScript</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <label for="img" class="title" style="color: antiquewhite;">Upload Image</label>
+                    <div class="upload">
+                        <input type="file" id="img">
+                    </div>
+                </div>
+                <div class="button">
+                    <button>Submit</button>
+                </div>
+
+            </form>
+        </div>
+
+        <div class="listProject">
+            <h1 class="title" style="margin-left: 550px; color: antiquewhite;">MY PROJECT</h1>
+            <div id="containerList">
+                <div class="miniProject">
+                </div>
+            </div>
+        </div>
+
+        <script src="./assets/js/add-project.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+    </body>
+
+</html>

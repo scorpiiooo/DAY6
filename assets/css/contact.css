@@ -1,0 +1,134 @@
+.form-contact {
+    height: 93vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .form-contact form label {
+    font-size: 20px;
+    font-weight: 400;
+  }
+  
+  .form-contact form input,
+  textarea,
+  select {
+    width: 100%;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    background: #ffffff;
+    border: 2px solid #afaeff;
+    border-radius: 8px;
+  }
+  
+  .form-contact form textarea {
+    height: 100px;
+  }
+  
+  .form-contact form button {
+    padding: 8px 30px;
+    font-size: 17px;
+    background: #000000;
+    border-radius: 10px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .listProject {
+    margin: auto;
+    margin-bottom: 20px;
+    width: 100%;
+    background-color: white;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.listProject h1 {
+    font-size: 40px;
+}
+
+.listProject h1.title {
+    text-align: center;
+    padding: 50px;
+    padding-bottom: 0;
+}
+
+.listProject #containerList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 40px;
+    text-align: start;
+}
+
+.miniProject {
+    margin: 10px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 15px;
+    flex-wrap: nowrap;
+    box-shadow: 0 10px 40px #dbdbdb;
+    border-radius: 15px;
+    justify-content: space-between;
+}
+
+
+.miniProject .img {
+    height: 190px;
+    border-radius: 15px;
+    overflow: hidden;
+
+}
+
+.miniProject img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.title-project h3 a {
+    color: black;
+}
+
+.title-project p {
+    color: gray;
+    margin-bottom: 10px;
+}
+
+.miniProject p {
+    font-size: 12px;
+}
+
+.miniProject .content {
+    height: 100px;
+    display: flex;
+}
+
+#icon img {
+    width: 40px;
+    height: 40px;
+    margin-left: 5px;
+
+}
+
+.btn {
+    display: flex;
+    gap: 5px;
+}
+
+.edit, .delet {
+    flex: 50%;
+    border: none;
+    background-color: black;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
